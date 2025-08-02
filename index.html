@@ -28,27 +28,44 @@
                 <span></span>
             </div>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Precision Steel Detailing for Modern Construction</h1>
-            <p class="hero-subtitle">Expert steel detailing services with cutting-edge 3D modeling, shop drawings, and structural analysis for projects worldwide.</p>
-            <div class="hero-buttons">
-                <a href="contact.html" class="btn btn-primary">
-                    <i class="fas fa-calculator"></i>
-                    Get Quote
-                </a>
-                <a href="services.html" class="btn btn-secondary">Our Services</a>
+        </nav>
+        
+        <!-- =================================== -->
+        <!--      Hero Section (Updated)       -->
+        <!-- =================================== -->
+        <section id="home" class="hero">
+            <!-- Animated background shapes -->
+            <div class="hero-bg-shape shape-1"></div>
+            <div class="hero-bg-shape shape-2"></div>
+            <div class="hero-bg-shape shape-3"></div>
+        
+            <div class="hero-container">
+                <!-- Left side content -->
+                <div class="hero-content">
+                    <h1 class="hero-title">Precision Steel Detailing for Modern Construction</h1>
+                    <p class="hero-subtitle">Expert steel detailing services with cutting-edge 3D modeling, shop drawings, and
+                        structural analysis for projects worldwide.</p>
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn btn-primary">
+                            <i class="fas fa-calculator"></i>
+                            <span>Get Quote</span>
+                        </a>
+                        <a href="services.html" class="btn btn-secondary">
+                            <span>Our Services</span>
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Right side image -->
+                <div class="hero-image-wrapper">
+                    <div class="hero-image">
+                        <img src="public/Gemini_Generated_Image_4igy9d4igy9d4igy (1).png"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x700/34495E/FFFFFF?text=Image+Not+Found';"
+                            alt="Modern steel construction framework">
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="hero-image">
-            <img src="public/Gemini_Generated_Image_4igy9d4igy9d4igy (1).png" alt="Steel Construction">
-        </div>
-    </section>
-
-    
+        </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
@@ -444,70 +461,32 @@
     </section>
 
     <!-- Download Brochure Section -->
-            <div
-                class="brochure-download bg-white border border-gray-200 rounded-xl shadow-md p-6 w-full max-w-2xl mx-auto transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <div class="brochure-content flex flex-col sm:flex-row items-center gap-6">
-                    <!-- Icon on the left -->
-                    <div class="brochure-icon flex-shrink-0">
-                        <i class="fas fa-file-alt text-blue-500 text-5xl"></i>
+            <section id="brochure" class="brochure-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Our Company Brochure</h2>
+                        <p>Get a comprehensive overview of our services, projects, and capabilities.</p>
                     </div>
             
-                    <!-- Text content in the middle -->
-                    <div class="brochure-text flex-grow text-center sm:text-left">
-                        <h4 class="text-xl font-bold text-gray-800">Company Brochure</h4>
-                        <p class="text-gray-600 mt-1">Download our comprehensive company brochure for detailed information about our
-                            services and capabilities.</p>
+                    <div class="brochure-card-container">
+                        <div class="brochure-icon-wrapper">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="brochure-text-content">
+                            <h3>Explore Our Expertise in Detail</h3>
+                            <p>Download our comprehensive brochure to learn more about our advanced steel detailing services and how
+                                we can contribute to your project's success.</p>
+                        </div>
+                        <div class="brochure-button-wrapper">
+                            <a href="https://netorgft12243051-my.sharepoint.com/:b:/g/personal/ssakthivel_globaltwinkle-engineering_com/EZ7wvYVkstRBiGnBcgyXLE8BPANHhtD876Ca27cpZ0-rcQ?e=BQfCjy"
+                                class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-download"></i>
+                                <span>Download Now</span>
+                            </a>
+                        </div>
                     </div>
-            
-                    <!-- Download button on the right -->
-                    <a href="javascript:void(0)"
-                        class="btn-download mt-4 sm:mt-0 flex-shrink-0 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 flex items-center gap-2 shadow-lg hover:shadow-blue-500/50"
-                        onclick="downloadBrochure(event)">
-                        <i class="fas fa-download"></i>
-                        <span>Download PDF</span>
-                    </a>
                 </div>
-            </div>
-            
-            <script>
-                /**
-                 * A placeholder function to simulate a brochure download.
-                 * It prevents the default link action and shows a message modal.
-                 * @param {Event} event - The click event.
-                 */
-                function downloadBrochure(event) {
-                    // Prevent the link from navigating anywhere
-                    event.preventDefault();
-
-                    // Show the custom message modal
-                    const modal = document.getElementById('message-modal');
-                    if (modal) {
-                        modal.classList.remove('hidden');
-                    }
-
-                    // In a real application, you would trigger the file download here.
-                    // For example:
-                    // const link = document.createElement('a');
-                    // link.href = '/path/to/your/brochure.pdf';
-                    // link.download = 'Company-Brochure.pdf';
-                    // document.body.appendChild(link);
-                    // link.click();
-                    // document.body.removeChild(link);
-
-                    console.log('Download initiated...');
-                }
-
-                /**
-                 * Function to close the message modal.
-                 */
-                function closeModal() {
-                    const modal = document.getElementById('message-modal');
-                    if (modal) {
-                        modal.classList.add('hidden');
-                    }
-                }
-            </script>
-
+            </section>
 
     <!-- Footer -->
     <footer class="footer">
